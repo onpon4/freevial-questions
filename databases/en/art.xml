@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database version="1.1" id="en" language="en"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///usr/share/games/freevial/databases/freevial-database.xsd">
+
+  <information>
+    <name>Art and Culture</name>
+    <description>Questions about movies, books, cartoons, etc.</description>
+    <destination>People who don't live under a rock.</destination>
+    <timestamp_creation>1189202400</timestamp_creation>
+    <timestamp_modification>1200139483</timestamp_modification>
+
+	<license>GNU GPLv3+</license>
+	<url>https://github.com/onpon4/freevial-questions</url>
+	<contact>onpon4@riseup.net</contact>
+
+    <authors>
+      <author>Julian Marchant</author>
+    </authors>
+  </information>
+  <appearance>
+    <image>categoria2.png</image>
+    <sound>c2.ogg</sound>
+  </appearance>
+  <questions>
+    <question>
+      <sentence>In Nineteen Eighty-Four, what is the supposed ideology behind the Party?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Ingsoc</answer>
+        <answer>Communism</answer>
+        <answer>Fascism</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Where does Spongebob Squarepants work?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Krusty Krab</answer>
+        <answer>In a pineapple</answer>
+        <answer>Jellyfish Fields</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Who is the arch-rival of Dexter from Dexter's Laboratory?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Mandark</answer>
+        <answer>Major Glory</answer>
+        <answer>Mojo Jojo</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the defining trait of the Avatar from Avatar: The Last Airbender?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Being able to bend all of the elements.</answer>
+        <answer>Being able to airbend.</answer>
+        <answer>Being the most powerful bender.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the name of the bounty hunter from One Piece who joins Luffy's crew?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Zoro</answer>
+        <answer>Nami</answer>
+        <answer>Sanji</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the Saiyan name of Goku from Dragon Ball?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Kacarrot</answer>
+        <answer>Oozaru</answer>
+        <answer>Raditz</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What series follows the quest of a pirate captain named Luffy to become "king of the pirates"?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">One Piece</answer>
+        <answer>Journey of the Pirates</answer>
+        <answer>Pirate King</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the name of the American cartoon series about a boy genius who has a secret laboratory next to his room?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Dexter's Laboratory</answer>
+        <answer>Jimmy Neutron: Boy Genius</answer>
+        <answer>Johnny Test</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In Courage the Cowardly Dog, what is the name of Courage's owner who frequently calls him a "stupid dog" and scares him with a mask?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Eustace Bagge</answer>
+        <answer>Muriel Bagge</answer>
+        <answer>Ickett Bagge</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the name of Spongebob's grumpy neighbor and coworker?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Squidward Tentacles</answer>
+        <answer>Eugine Krabbs</answer>
+        <answer>Patrick Star</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is Superman's greatest weakness?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Kryptonite</answer>
+        <answer>Electricity</answer>
+        <answer>Xenothium</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is Batman's real name?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Bruce Wayne</answer>
+        <answer>Clark Kent</answer>
+        <answer>Tim Drake</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is Spider-Man's real name?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Peter Parker</answer>
+        <answer>Dick Grayson</answer>
+        <answer>Tim Drake</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the real name of the first Robin, who later became Nightwing?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Dick Grayson</answer>
+        <answer>Tim Drake</answer>
+        <answer>Bruce Wayne</answer>
+      </answers>
+    </question>
+  </questions>
+</database>

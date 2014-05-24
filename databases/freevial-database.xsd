@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation xml:lang="en">
+            File containing questions for a category for the game Freevial
+            (and possibly other games using the same database format).
+        </xs:documentation>
+        <xs:documentation xml:lang="ca">
+            Fitxer de preguntes i respostes per a una categoria de
+            preguntes del joc Freevial.
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:element name="database" type="databaseType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Root element.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Element principal, a l'arrel del fitxer.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="databaseType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Information about the category.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Dades de la categoria.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element type="informationType" name="information" />
+            <xs:element type="appearanceType" name="appearance" />
+            <xs:element type="questionsType" name="questions" />
+        </xs:sequence>
+        <xs:attribute name="version" use="required" type="version">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">
+                    Version of the used format, as it may change in
+                    the future.
+                </xs:documentation>
+                <xs:documentation xml:lang="ca">
+                    Versió del format d'aquest fitxer de categoria, en
+                    previsió de futurs canvis.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute type="xs:string" name="id" use="optional">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">
+                    Unique string to identify this category.
+                </xs:documentation>
+                <xs:documentation xml:lang="ca">
+                    Un identificador únic per a la categoria.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute type="languagecode" name="language" use="required">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">
+                    Two character code of the language in which the
+                    questions and answers are written (ISO 639-1).
+                </xs:documentation>
+                <xs:documentation xml:lang="ca">
+                    Nom del llenguatge natural en què s'han escrit les
+                    preguntes i respostes, representat en el codi ISO
+                    de 2 caràcters (ISO 639-1).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:simpleType name="languagecode">
+        <xs:restriction base="xs:string">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">
+                    ISO 639-1 Language Code.
+                </xs:documentation>
+                <xs:documentation xml:lang="ca">
+                    Codi d'idioma segons l'ISO 639-1.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:length value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="version">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="1.0" />
+            <xs:enumeration value="1.1" >
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Adds the possibility to list an unlimited amount of
+                        answers, the "media" element (for images or sound)
+                        and difficulty levels.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Afegeix respostes ilimitades, l'etiqueta "media" (per a
+                        imatges o so, de moment) i nivells de dificultat.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="questionsType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+               Questions in this category.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Llista de preguntes de la categoria amb les
+                corresponents respostes possibles.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element type="questionType" name="question"
+                maxOccurs="unbounded" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="relativeFilePath">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Name of the file.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Nom de fitxer, relatiu al directori que toca.
+            </xs:documentation>
+        </xs:annotation>
+
+        <xs:restriction base="xs:string"></xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="appearanceType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Multimedia contents associated to the category.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Continguts multimèdia associats a la categoria.
+            </xs:documentation>
+        </xs:annotation>
+
+        <xs:sequence>
+            <xs:element name="image" type="relativeFilePath">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Name of the image file which is used as a background
+                        for all questions in this category. It should be
+                        black and white (as it will get a colour layer),
+                        1024x768 pixels big and if possible in PNG format.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Nom del fitxer d'imatge. La imatge en qüestió
+                        es posa de fons a les preguntes de la categoria,
+                        rotant cap baix, sota una transparència que tapa
+                        la part inferior per escriure-hi la pregunta i
+                        les respostes, i també surt a la dreta del selector
+                        de categories. Convé que sigui en blanc i negre (en
+                        escala de grisos) perquè se li aplicarà un filtre
+                        del color corresponent a la categoria; les imatges
+                        del tipus col·lage funcionen bé en veure-les per
+                        una finestra estreta. Es recomana que s'utilitzi un
+                        PNG de mida 1024x768.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+            <xs:element name="sound" type="relativeFilePath">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Name of the sound file which the wheel does when
+                        a category is selected. It must be encoded as OGG
+                        Vorbis or WAV, and be 2 or 3 seconds long.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Nom del fitxer de so. Ha de tenir format OGG Vorbis
+                        o WAV i preferiblement una durada de 2 o 3 segons.
+                        És el so que sona que fa la roda quan s'atura a
+                        la categoria, abans de presentar la categoria.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="authorsType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                List of authors which wrote questions for this category. It
+                is displayed in the category selection screen and in the
+                credits.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Llista d'autors i/o autores d'aquesta categoria de
+                preguntes i respostes. Surt al selector de categories i
+                als crèdits.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element type="string" name="author"
+                maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Author name. It is displayed up to the first comma.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Text lliure identificatiu d'un autor o autora.
+                        Només es mostra fins a la primera coma a la
+                        pantalla de selecció de categories.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="timestamp">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                UNIX timestamp. On a POSIX system, you can get it with:
+                date +'%s' -d '2008-08-01 20:00'.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Data i hora expressada com a número de segons des del
+                cap d'any de 1969 (inici de 1970) a Greenwich. En un
+                sistema POSIX podeu obtenir el valor amb date +'%s' -d
+                '2008-08-01 20:00'.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int" />
+    </xs:simpleType>
+
+    <xs:complexType name="informationType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Information about this category.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Fitxa de la categoria de preguntes i respostes.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="name" type="string">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Display name.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Nom de la categoria. Surt al selector de
+                        categories, a la roda, etc.
+                    </xs:documentation>
+                </xs:annotation>
+
+            </xs:element>
+            <xs:element name="description" type="string">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Topic description. It is displayed on the
+                        category selection screen.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Descripció dels temes de les preguntes i
+                        respostes. Surt al selector de categories.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+            <xs:element name="destination" type="string">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Target audience to which the questions are
+                        aimed at.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Caracterització de les persones a qui es
+                        recomana jugar amb aquesta categoria de
+                        preguntes. Per a qui s'han pensat les preguntes.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+            <xs:element name="timestamp_creation" type="timestamp">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Creation date of this category, as an UNIX timestamp.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Data i hora de la creació de la BD. En realitat
+                        no es fa servir per a res. Data i hora
+                        expressada com a número de segons des del cap
+                        d'any de 1969 (inici de 1970) a Greenwich. En un
+                        sistema POSIX podeu obtenir el valor amb date
+                        +'%s' -d '2008-08-01 20:00'.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="timestamp_modification"
+                type="timestamp">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Last modification date of this file, as an UNIX
+                        timestamp.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Data i hora de la darrera modificació de la BD.
+                        És útil per a poder diferenciar diferents versions
+                        d'una mateixa categoria. S'expressa com a número de
+                        segons des del cap d'any de 1969 (inici de 1970) a
+                        Greenwich. En un sistema POSIX podeu obtenir el valor
+                        amb date +'%s' -d '2008-08-01 20:00'.
+                    </xs:documentation>
+                </xs:annotation>
+
+            </xs:element>
+            <xs:element type="xs:string" name="license">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        License under which this category is released. Strings
+                        as described on http://wiki.debian.org/Proposals/CopyrightFormat,
+                        under "License", are prefered.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Text lliure que descriu, identifica o referencia
+                        les condicions que posen els autors i autores
+                        per poder reproduir, copiar modificar, etc.
+                        aquesta categoria.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+            <xs:element name="url" type="xs:anyURI" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        URL from where the latest version of this file can
+                        be downloaded.
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        URL des d'on es pot baixar la última versió d'aquest
+                        fitxer.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+            <xs:element type="xs:string" name="contact">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Contact information (usually an e-mail address).
+                    </xs:documentation>
+                    <xs:documentation xml:lang="ca">
+                        Informació de contacte dels autors i/o autores,
+                        típicament una única adreça de correu
+                        electrònic.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+            <xs:element type="authorsType" name="authors" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="answerType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Answer.
+            </xs:documentation>
+            <xs:documentation xml:lang="ca">
+                Text d'una de les respostes.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="string">
+                <xs:attribute type="xs:boolean" name="correct"
+                    use="optional">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">
+                            Boolean value which indicates if this answer
+                            is correct or not.
+                        </xs:documentation>
+                        <xs:documentation xml:lang="ca">
+                            Pot ser cert (true) o fals (false), per indicar
+                            si aquesta resposta és correcta o incorrecte.
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="questionType">
+        <xs:annotation>
+            <xs:documentation xml:lang="ca">
+                Dades de la pregunta i respostes.
+            </xs:documentation>
+        </xs:annotation>
+
+        <xs:sequence>
+            <xs:element type="string" name="sentence">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ca">
+                        Text de la pregunta.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="string" name="author">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ca">
+                        Text lliure identificatiu de l'autor o autora de
+                        la pregunta. Surt quan s'escriu la pregunta en
+                        pantalla. La gent acostuma a posar malnoms o
+                        noms d'usuari.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element type="string" name="comments" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ca">
+                        Text lliure informatiu del rerefons de la
+                        pregunta o perquè la resposta correcta és la
+                        correcta i les altres no. Pot ser mostrat després
+                        de respondre la pregunta.
+                    </xs:documentation>
+                </xs:annotation>
+
+            </xs:element>
+            <xs:element name="media" type="mediaType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ca">
+                        Fitxer de imatge a mostrar o so a reproduir
+                        quan es mostra la pregunta. Pot contenir dues
+                        imatges, separades per | de manera que la primera
+                        es mostrarà al preguntar i la segona al mostrar
+                        la resposta correcta.
+                    </xs:documentation>
+                </xs:annotation>
+
+            </xs:element>
+            <xs:element type="answersType" name="answers" />
+        </xs:sequence>
+        <xs:attribute name="difficulty" type="difficultyType" use="optional">
+            <xs:annotation>
+            <xs:documentation xml:lang="ca">
+               Indica si la pregunta és fàcil (Easy), mitjaneta (Medium) o
+               díficil (Hard). El valor predeterminat, si no s'indica cap valor,
+               és Medium.
+            </xs:documentation>
+        </xs:annotation>
+    
+        </xs:attribute>
+    </xs:complexType>
+    
+    
+    <xs:simpleType name="difficultyType">
+        <xs:annotation>
+            <xs:documentation xml:lang="ca">
+               Indica si la pregunta és fàcil (Easy), mitjaneta (Medium) o
+               díficil (Hard). El valor predeterminat, si no s'indica cap valor,
+               és Medium. 
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token" >
+            <xs:enumeration value="Easy" />
+            <xs:enumeration value="Medium" />
+            <xs:enumeration value="Hard" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="mediaType">
+        <xs:annotation>
+            <xs:documentation xml:lang="ca">
+                        Fitxer de imatge a mostrar o so a reproduir
+                        quan es mostra la pregunta. Pot contenir dues
+                        imatges, separades per | de manera que la primera
+                        es mostrarà al preguntar i la segona al mostrar
+                        la resposta correcta.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+
+            <xs:extension base="relativeFilePath">
+                <xs:attribute name="type" use="required"
+                    type="typeOfMediaType">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="ca">
+                            Indica si és una imatge (o dues) o bé un só.
+                            Val "image" o "audio".
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="typeOfMediaType">
+        <xs:annotation>
+            <xs:documentation xml:lang="ca">
+                Indica si és una imatge (o dues) o bé un só.
+                Val "image" o "audio".
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="audio" />
+            <xs:enumeration value="image" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="answersType">
+        <xs:annotation>
+            <xs:documentation xml:lang="ca">
+                Llista de respostes a la pregunta. Com a mínim n'hi
+                ha d'haver una de correcta i una (però preferiblement
+                dues) d'incorrectes. Se'n mostraran fins a tres sota de
+                la pregunta, en ordre aleatori, precedides de la lletra
+                A, B o C.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element type="answerType" name="answer"
+                maxOccurs="unbounded" minOccurs="2" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+	<xs:complexType name="string" mixed="true">
+		<xs:annotation>
+			<xs:documentation xml:lang="ca">
+				El programa tracta cada seqüència de #, cr i lf com un
+				salt de línia (i es carrega les del principi i final de
+				cada element). Però la resta de caracters de control com
+				tabuladors o similars es veuen com una caixeta buida
+				lletja, per tant els prohibeixo.
+			</xs:documentation>
+		</xs:annotation>
+	
+			 <xs:sequence>
+             <xs:element name="br" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                </xs:complexType>
+             </xs:element>
+         </xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="text" >
+         
+        <xs:restriction base="xs:string">
+			<xs:pattern value="(\P{Cc}|\r|\n|\t)*"></xs:pattern>
+			<xs:whiteSpace value="collapse" />
+		</xs:restriction>   
+     </xs:simpleType>
+</xs:schema>

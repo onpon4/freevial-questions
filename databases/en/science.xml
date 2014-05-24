@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database version="1.1" id="en" language="en"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///usr/share/games/freevial/databases/freevial-database.xsd">
+
+  <information>
+    <name>Science</name>
+    <description>Questions about science.</description>
+    <destination>People who aren't creationists.</destination>
+    <timestamp_creation>1189202400</timestamp_creation>
+    <timestamp_modification>1200139483</timestamp_modification>
+
+	<license>GNU GPLv3+</license>
+	<url>https://github.com/onpon4/freevial-questions</url>
+	<contact>onpon4@riseup.net</contact>
+
+    <authors>
+      <author>Julian Marchant</author>
+    </authors>
+  </information>
+  <appearance>
+    <image>categoria2.png</image>
+    <sound>c2.ogg</sound>
+  </appearance>
+  <questions>
+    <question>
+      <sentence>What is a scientific theory?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">A hypothesis which has been demonstrated to be accurate by repeated tests and peer-review.</answer>
+        <answer>An educated guess made by professionals.</answer>
+        <answer>An explanation for an observed phenomenon which makes sense.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does the theory of evolution explain?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">The variety in modern living organisms.</answer>
+        <answer>The origin of life.</answer>
+        <answer>The origin of the universe.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the largest species of spider by leg-span?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Giant huntsman spider</answer>
+        <answer>Tarantula</answer>
+        <answer>Goliath birdeater</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What was the most significant mass-extinction event in Earth's history?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Permian-Triassic extinction event (251 million years ago)</answer>
+        <answer>Cretaceous-Paleogene extinction event (66 million years ago)</answer>
+        <answer>Ordovician-Silurian extinction event (450 million years ago)</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the defining characteristic of a black hole?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Being so dense that it creates an area around it which nothing, including light, can escape from.</answer>
+        <answer>Being so massive that everything around it, including light, is sucked in.</answer>
+        <answer>Being invisible to the naked eye.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is an organic chemical?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">A chemical which has carbon in it.</answer>
+        <answer>A chemical that is natural.</answer>
+        <answer>A chemical that is not toxic.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does the chemical formula of water, H2O, mean?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">2 hydrogen atoms, 1 oxygen atom</answer>
+        <answer>1 hydrogen atom, 2 oxygen atoms</answer>
+        <answer>Oxygen + Hose</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the atomic number of oxygen?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">8</answer>
+        <answer>16</answer>
+        <answer>5</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the most dense non-radioactive element?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Lead</answer>
+        <answer>Gold</answer>
+        <answer>Bismuth</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the symbol of the chemical element, mercury?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Hg</answer>
+        <answer>Mc</answer>
+        <answer>My</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the symbol of the chemical element, lead?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Pb</answer>
+        <answer>Ld</answer>
+        <answer>Pl</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the symbol of the chemical element, gold?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Au</answer>
+        <answer>Gd</answer>
+        <answer>G</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Which of the following chemical elements is NOT a noble gas?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Hydrogen</answer>
+        <answer>Helium</answer>
+        <answer>Krypton</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Which of the following chemical elements is a metal?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Sodium</answer>
+        <answer>Bromine</answer>
+        <answer>Xenon</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the symbol of the chemical element, potassium?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">K</answer>
+        <answer>Pt</answer>
+        <answer>G</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the name of the theory that explains the origin of the universe?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Big Bang Theory</answer>
+        <answer>Theory of Evolution</answer>
+        <answer>Creation Theory</answer>
+      </answers>
+    </question>
+  </questions>
+</database>

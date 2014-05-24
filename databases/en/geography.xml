@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database version="1.1" id="en" language="en"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///usr/share/games/freevial/databases/freevial-database.xsd">
+
+  <information>
+    <name>Geography</name>
+    <description>Questions about geography.</description>
+    <destination>Everyone on Earth.</destination>
+    <timestamp_creation>1189202400</timestamp_creation>
+    <timestamp_modification>1200139483</timestamp_modification>
+
+	<license>GNU GPLv3+</license>
+	<url>https://github.com/onpon4/freevial-questions</url>
+	<contact>onpon4@riseup.net</contact>
+
+    <authors>
+      <author>Julian Marchant</author>
+    </authors>
+  </information>
+  <appearance>
+    <image>categoria2.png</image>
+    <sound>c2.ogg</sound>
+  </appearance>
+  <questions>
+    <question>
+      <sentence>What is the capital of Japan?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Tokyo</answer>
+        <answer>Kyoto</answer>
+        <answer>Beijing</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the world's largest freshwater reserve?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Lake Superior</answer>
+        <answer>Lake Victoria</answer>
+        <answer>Pacific Ocean</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the world's tallest man-made structure?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Burj Khalifa</answer>
+        <answer>Empire State Building</answer>
+        <answer>Eiffel Tower</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of California?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Sacramento</answer>
+        <answer>Los Angeles</answer>
+        <answer>San Francisco</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of Florida?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Tallahassee</answer>
+        <answer>Miami</answer>
+        <answer>Jacksonville</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of Michigan?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Lansing</answer>
+        <answer>Detroit</answer>
+        <answer>Ann Arbor</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of China?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Beijing</answer>
+        <answer>Tokyo</answer>
+        <answer>Shanghai</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of South Korea?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Seoul</answer>
+        <answer>Beijing</answer>
+        <answer>Pyongyang</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the official name of North Korea?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Democratic People's Republic of Korea</answer>
+        <answer>People's Republic of Korea</answer>
+        <answer>Communist State of Korea</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of Vietnam?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Hanoi</answer>
+        <answer>Beijing</answer>
+        <answer>Ho Chi Minh City</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of New York?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Albany</answer>
+        <answer>New York City</answer>
+        <answer>Buffalo</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of Texas?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Austin</answer>
+        <answer>Houston</answer>
+        <answer>Dallas</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of Nevada?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Carson City</answer>
+        <answer>Las Vegas</answer>
+        <answer>Henderson</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of Illinois?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Springfield</answer>
+        <answer>Chicago</answer>
+        <answer>Belleville</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the capital of Canada?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Ottawa</answer>
+        <answer>Toronto</answer>
+        <answer>Vancouver</answer>
+      </answers>
+    </question>
+  </questions>
+</database>

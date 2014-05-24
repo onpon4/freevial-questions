@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database version="1.1" id="en" language="en"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///usr/share/games/freevial/databases/freevial-database.xsd">
+
+  <information>
+    <name>Computers and Electronics</name>
+    <description>Questions about computers and other electronics.</description>
+    <destination>Geeks.</destination>
+    <timestamp_creation>1189202400</timestamp_creation>
+    <timestamp_modification>1200139483</timestamp_modification>
+
+	<license>GNU GPLv3+</license>
+	<url>https://github.com/onpon4/freevial-questions</url>
+	<contact>onpon4@riseup.net</contact>
+
+    <authors>
+      <author>Julian Marchant</author>
+    </authors>
+  </information>
+  <appearance>
+    <image>categoria2.png</image>
+    <sound>c2.ogg</sound>
+  </appearance>
+  <questions>
+    <question>
+      <sentence>On what year was the Free Software Foundation founded?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">1985</answer>
+        <answer>1983</answer>
+        <answer>1986</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What was the first program developed for the GNU operating system?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">GNU Emacs</answer>
+        <answer>Linux</answer>
+        <answer>GNU Compiler Collection</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Copyleft licenses allow you to use, modify, and redistribute a program provided that...</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">You distribute it only under that same license.</answer>
+        <answer>You use the software only for purposes that are good.</answer>
+        <answer>You distribute it only non-commercially.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is GNU?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">A free POSIX operating system.</answer>
+        <answer>The organization that authored the GNU General Public License.</answer>
+        <answer>A collection of utilities commonly used on Linux.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is BSD?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">A Unix system which has been released as free software.</answer>
+        <answer>A Linux distribution commonly used on servers.</answer>
+        <answer>A permissive free software license.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does "GNOME" stand for?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Nothing. It's just GNOME.</answer>
+        <answer>GNU Network Object Model Environment</answer>
+        <answer>Graphical Network Object Model Environment</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the name of the window system commonly used with Unix and other POSIX systems?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">X</answer>
+        <answer>GNOME</answer>
+        <answer>Linux</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is free software, as defined by the Free Software Foundation?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Software which users are able and allowed to use, modify, and redistribute as desired.</answer>
+        <answer>Software which is available without charge.</answer>
+        <answer>Software which users are able and allowed to use, modify, and redistribute as desired provided that derived versions also give these same permissions.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is open source software, as defined by the Open Source Initiative?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Software which users are able and allowed to use, modify, and redistribute as desired.</answer>
+        <answer>Software whose source code is publicly available.</answer>
+        <answer>Software which runs on GNU/Linux systems.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the difference between free software and open source software?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">The free software movement focuses on ethical concerns, while the open source movement focuses on practical concerns.</answer>
+        <answer>Free software is available without charge, while open source software can be commercial.</answer>
+        <answer>Free software requires users to give other users the same freedoms they were given, while open source software does not necessarily have this requirement.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Defective pixels on LCD monitors which perpetually show one color are called...</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">dead pixels.</answer>
+        <answer>broken pixels.</answer>
+        <answer>defective pixels.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does "1080p" mean?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">A display with 1080 pixels of vertical resolution and progressive scan.</answer>
+        <answer>A display which has 1080 pixels per inch (PPI).</answer>
+        <answer>A display with a resolution of 1920x1080 pixels</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>The raster image standard commonly used for photos is...</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">JPEG</answer>
+        <answer>PNG</answer>
+        <answer>GIF</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does "JPEG" stand for?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Joint Photographic Experts Group</answer>
+        <answer>Joint Photograph Export Graphic</answer>
+        <answer>Journalist Photograph Export Graphic</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the best way to charge a lithium-ion battery?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Charge it as needed whenever possible.</answer>
+        <answer>Drain the battery completely before charging it, then leave the device it powers off until it is completely charged.</answer>
+        <answer>Always leave it partially discharged.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does "Wine" stand for?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Wine Is Not an Emulator</answer>
+        <answer>WINdows Emulator</answer>
+        <answer>Windows Interface is Not Efficient</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does "GIF" stand for?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Graphics Interchange Format</answer>
+        <answer>Graphical Image Format</answer>
+        <answer>GIF Is Fun</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does "SoC" stand for?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">System-on-a-Chip</answer>
+        <answer>Special-ordered Computer</answer>
+        <answer>Sort-of Computer</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is the common name of the family of architectures, introduced by Intel in 1978, which continues to be the most popular and widely supported architecture for personal computers?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">x86</answer>
+        <answer>MIPS</answer>
+        <answer>Windows</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>A low-level computer programming language which greatly (often directly) corresponds to an architecture's machine code instructions is called a(n)...</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">assembly language.</answer>
+        <answer>dictionary language.</answer>
+        <answer>direct language.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What does "PNG" stand for?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Both "Portable Network Graphic" and "PNG's Not GIF".</answer>
+        <answer>"Portable Network Graphic".</answer>
+        <answer>"PNG's Not GIF".</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What is KDE named after?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">The Common Desktop Environment.</answer>
+        <answer>Klondike, which the developers of KDE liked.</answer>
+        <answer>Its founder, whose last name starts with "K".</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>A program which replicates itself by inserting copies of itself into other computer programs is called a...</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Virus.</answer>
+        <answer>Trojan horse.</answer>
+        <answer>Bacterium.</answer>
+      </answers>
+    </question>
+  </questions>
+</database>

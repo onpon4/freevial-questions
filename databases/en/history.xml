@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database version="1.1" id="en" language="en"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///usr/share/games/freevial/databases/freevial-database.xsd">
+
+  <information>
+    <name>History</name>
+    <description>Questions about history.</description>
+    <destination>Everyone who graduated 5th grade.</destination>
+    <timestamp_creation>1189202400</timestamp_creation>
+    <timestamp_modification>1200139483</timestamp_modification>
+
+	<license>GNU GPLv3+</license>
+	<url>https://github.com/onpon4/freevial-questions</url>
+	<contact>onpon4@riseup.net</contact>
+
+    <authors>
+      <author>Julian Marchant</author>
+    </authors>
+  </information>
+  <appearance>
+    <image>categoria2.png</image>
+    <sound>c2.ogg</sound>
+  </appearance>
+  <questions>
+    <question>
+      <sentence>Who was the first European explorer to visit the Americas?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Leif Erickson</answer>
+        <answer>Christopher Columbus</answer>
+        <answer>The Pilgrims</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Why did Christopher Columbus have trouble obtaining support for his plan to sail to Asia?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">He thought the Earth was smaller than it was.</answer>
+        <answer>People of the time thought the Earth was flat.</answer>
+        <answer>He had a bad reputation.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Who was the first to propose that the Earth was spherical?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Ancient Greek philosophers</answer>
+        <answer>Christopher Columbus</answer>
+        <answer>Ferdinand Magellan</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What was the first commercial video game ever developed?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Computer Space</answer>
+        <answer>Pong</answer>
+        <answer>Magnavox Odyssey</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What was the first digital video game ever developed?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Spacewar</answer>
+        <answer>Pong</answer>
+        <answer>Tennis for Two</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>What was the first constitution of the United States of America?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Articles of Confederation</answer>
+        <answer>United States Constitution</answer>
+        <answer>Declaration of Independence</answer>
+      </answers>
+    </question>
+  </questions>
+</database>

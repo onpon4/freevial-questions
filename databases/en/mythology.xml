@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database version="1.1" id="en" language="en"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///usr/share/games/freevial/databases/freevial-database.xsd">
+
+  <information>
+    <name>Mythology</name>
+    <description>Questions about mythology and religion.</description>
+    <destination>People who are not trapped in a box of their own religion.</destination>
+    <timestamp_creation>1189202400</timestamp_creation>
+    <timestamp_modification>1200139483</timestamp_modification>
+
+	<license>GNU GPLv3+</license>
+	<url>https://github.com/onpon4/freevial-questions</url>
+	<contact>onpon4@riseup.net</contact>
+
+    <authors>
+      <author>Julian Marchant</author>
+    </authors>
+  </information>
+  <appearance>
+    <image>categoria2.png</image>
+    <sound>c2.ogg</sound>
+  </appearance>
+  <questions>
+    <question>
+      <sentence>Who is the Greek god of the Sun?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Apollo</answer>
+        <answer>Ra</answer>
+        <answer>Titan</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In Jewish and Christian mythology, what is the name of the king who killed a giant named Goliath with only a sling?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">David</answer>
+        <answer>Moses</answer>
+        <answer>Jesus</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>Which of the following is not one of the Ten Commandments in Jewish and Christian mythology?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">"You shall go to church every week."</answer>
+        <answer>"You shall have no other gods before me."</answer>
+        <answer>"You shall not steal."</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In ancient Egyptian mythology, who is Anubis?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">The god of the dead.</answer>
+        <answer>The god of dogs.</answer>
+        <answer>The god of darkness.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In ancient Egyptian mythology, who is Amun?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">A local deity who fused with Ra/Re to become Amun-Ra/Amun-Re.</answer>
+        <answer>The god of the moon who fused with Ra/Re, becoming Amun-Ra/Amun-Re, as a truce.</answer>
+        <answer>The god of almonds.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In ancient Egyptian mythology, who is Osiris?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">The god of the dead and the afterlife.</answer>
+        <answer>The god of punishment and retribution.</answer>
+        <answer>A local deity who had a pet dragon named Slifer.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In ancient Egyptian mythology, who is Ra/Re?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">The god of the sun.</answer>
+        <answer>The god of water.</answer>
+        <answer>The god of birds.</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In Christian mythology, on what date was Jesus born?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">It isn't known.</answer>
+        <answer>December 25</answer>
+        <answer>April 12</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In Jewish and Christian mythology, what is the name of the prophet who freed the Israelites from the Egyptians?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">Moses</answer>
+        <answer>Jesus</answer>
+        <answer>Saul</answer>
+      </answers>
+    </question>
+    <question>
+      <sentence>In Jewish and Christian mythology, what was the name of the tree that Adam and Eve were forbidden to eat fruit from?</sentence>
+      <author>Julian Marchant</author>
+      <comments></comments>
+      <answers>
+        <answer correct="true">The tree of knowledge of good and evil</answer>
+        <answer>The tree of original sin</answer>
+        <answer>The tree of rebellion against God</answer>
+      </answers>
+    </question>
+  </questions>
+</database>
